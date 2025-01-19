@@ -1,0 +1,519 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% LaTeX book template                           %%
+%% Author:  Amber Jain (http://amberj.devio.us/) %%
+%% License: ISC license                          %%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[a4paper,11pt,oneside]{book}
+\usepackage{modulestyle}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Source: http://en.wikibooks.org/wiki/LaTeX/Hyperlinks %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 'dedication' environment: To add a dedication paragraph at the start of book %
+% Source: http://www.tug.org/pipermail/texhax/2010-June/015184.html            %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newenvironment{dedication}
+{
+   \cleardoublepage
+   \thispagestyle{empty}
+   \vspace*{\stretch{1}}
+   \hfill\begin{minipage}[t]{0.66\textwidth}
+   \raggedright
+}
+{
+   \end{minipage}
+   \vspace*{\stretch{3}}
+   \clearpage
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Chapter quote at the start of chapter        %
+% Source: http://tex.stackexchange.com/a/53380 %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\makeatletter
+\renewcommand{\@chapapp}{}% Not necessary...
+\newenvironment{chapquote}[2][2em]
+  {\setlength{\@tempdima}{#1}%
+   \def\chapquote@author{#2}%
+   \parshape 1 \@tempdima \dimexpr\textwidth-2\@tempdima\relax%
+   \itshape}
+  {\par\normalfont\hfill--\ \chapquote@author\hspace*{\@tempdima}\par\bigskip}
+\makeatother
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% First page of book which contains 'stuff' like: %
+%  - Book title, subtitle                         %
+%  - Book author name                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\BookTitle}{Discrete Structures 2}
+\newcommand{\BookTitleFootnote}{A course in the Bachelor of Science in Computer
+Science}
+
+\newcommand{\BookSubtitle}{A Study Guide for Students of Sorsogon State University - Bulan Campus}
+\newcommand{\BookSubtitleFootnote}{This book is a study guide for students of
+Sorsogon State University - Bulan Campus taking up the course Discrete Structures 2.}
+
+\newcommand{\BookAuthorFirstName}{Jarrian Vince}
+\newcommand{\BookAuthorLastName}{Gojar}
+\newcommand{\BookAuthorName}{Jarrian Vince G. Gojar}
+\newcommand{\BookAuthorURL}{https://github.com/godkingjay}
+
+% Book's title and subtitle
+\title{\Huge \textbf{\BookTitle}  \footnote{\BookTitleFootnote} \\
+\huge \BookSubtitle \footnote{\BookSubtitleFootnote}}
+
+% Author
+\author{\textsc{\BookAuthorName}\thanks{\url{\BookAuthorURL}}}
+
+\begin{document}
+
+\frontmatter
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Add a dedication paragraph to dedicate your book to someone %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{dedication}
+Sorsogon State University - Bulan Campus
+\end{dedication}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Auto-generated table of contents, list of figures and list of tables %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\tableofcontents
+\listoffigures
+\listoftables
+% \lstlistoflistings
+
+\mainmatter
+
+%%%%%%%%%%%
+% Preface %
+%%%%%%%%%%%
+\chapter*{Preface}
+\begin{chapquote}{John von Neumann}
+  ``If people do not believe that mathematics is simple, it is only
+  because they do not realize how complicated life is.''
+  \end{chapquote}
+
+\noindent \BookAuthorName \\
+\noindent \url{\BookAuthorURL}
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%%%     Chapter     %%%
+%%%%%%%%%%%%%%%%%%%%%%%
+\chapter{Boolean Algebra}
+
+\section{Introduction}
+
+Circuits in computers are made up of millions of tiny switches that
+can be in one of two states: on or off. These switches are controlled
+by electrical signals that represent logical values. The behavior of
+these switches can be described using a mathematical system called
+Boolean Algebra. \textbf{Boolean Algebra} is a branch of mathematics
+that deals with logical values and operations on these values. It is 
+widely used in computer science and engineering to design and analyze
+digital circuits. Computers uses the binary number system, which has
+only two digits: $0$ and $1$ which means ``low voltage'' and ``high
+volt'' respectively. These digits correspond to the logical
+values \textcolor{red}{FALSE} and \textcolor{ForestGreen}{TRUE},
+respectively.
+
+\section{History of Boolean Algebra}
+
+\textbf{George Boole} was an English mathematician and logician who lived
+in the 19th century. He was born in 1815 and died in 1864. Boole is best
+known for his work in the field of logic, which laid the foundation for
+modern computer science.
+
+Boole's most famous work is his book \textit{The Laws of Thought}, which
+was published in 1854. In this book, Boole introduced the concept of
+Boolean Algebra, which is a mathematical system for dealing with logical
+values. Boolean Algebra is based on the idea that logical values can be
+represented as either \textcolor{ForestGreen}{TRUE} or \textcolor{red}{FALSE}.
+
+In 1938, \textbf{Claude Shannon} showed that the two-valued Boolean
+Algebra could be used to describe the operation of electrical switches.
+This discovery laid the foundation for the design of digital circuits
+and computers.
+
+\section{Fundamental Operations}
+
+The three fundamental operations of Boolean Algebra are:
+
+\begin{itemize}
+\item \textbf{AND} - The AND operation takes two or more inputs and produces a
+  $1$ output only if all inputs are $1$.
+\item \textbf{OR} - The OR operation takes two or more inputs and produces a
+  $1$ output if at least one input is $1$.
+\item \textbf{NOT} - The NOT operation takes a single input and produces
+  the opposite value. If the input is $1$, the output is $0$, and vice versa.
+\end{itemize}
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c c}
+    \hline
+    \textbf{} & \textbf{Formal Logic} & \textbf{Set Theory} & \textbf{Boolean Algebra} \\
+    \hline
+    \textbf{Variables} & p, q, r, ... & A, B, C, ... & x, y, z, ... \\
+    
+    \textbf{Operations} & $\land$, $\lor$, $\lnot$ & $\cap$, $\cup$, $-$ & •, +, ' \\
+    
+    \textbf{Special Elements} & $F$, $T$ & $\emptyset$, U & 0, 1 \\
+    \hline
+  \end{tabular}
+  \caption{Comparison of Formal Logic, Set Theory, and Boolean Algebra}
+  \label{table:Comparison-Formal-Logic-Set-Theory-Boolean-Algebra}
+\end{table}
+
+Table \ref{table:Comparison-Formal-Logic-Set-Theory-Boolean-Algebra} shows
+a comparison of the notation used in formal logic, set theory, and Boolean
+Algebra. In formal logic, variables are represented by letters such as
+$p$, $q$, $r$, etc., and the logical operations are represented by symbols
+such as $\land$, $\lor$, and $\lnot$. In set theory, variables are
+represented by capital letters such as $A$, $B$, $C$, etc., and the set
+operations are represented by symbols such as $\cap$, $\cup$, and $-$. In
+Boolean Algebra, variables are represented by letters such as $x$, $y$, $z$,
+etc., and the Boolean operations are represented by symbols such as $\cdot$,
+$+$, and $'$. The special elements in each system are $F$ and $T$ in formal
+logic, $\emptyset$ and $U$ in set theory, and $0$ and $1$ in Boolean Algebra.
+
+Though the notation used in each system is different, the underlying
+concepts are the same. For example, the AND operation in Boolean Algebra
+is similar to the logical conjunction operation in formal logic, where the
+output is \textcolor{ForestGreen}{TRUE} only if all inputs are
+\textcolor{ForestGreen}{TRUE}. Similarly, the OR operation in Boolean
+Algebra is similar to the logical disjunction operation in formal logic,
+where the output is \textcolor{ForestGreen}{TRUE} if at least one input is
+\textcolor{ForestGreen}{TRUE}. Compared to set theory, the AND operation
+in Boolean Algebra is similar to the intersection operation, where the
+output is the set of elements that are common to all input sets.
+
+\subsection{AND Operation}
+
+The AND operation is denoted by the symbol $\cdot$ or juxtaposition. The
+output of the AND operation is $1$ only if all inputs are $1$.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $0$ \\
+    $1$ & $0$ & $0$ \\
+    $1$ & $1$ & $1$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the AND Operation}
+  \label{table:Truth-Table-AND-Operation}
+\end{table}
+
+Table \ref{table:Truth-Table-AND-Operation} shows the truth table for the
+AND operation. The output is $1$ only if both inputs are $1$; otherwise,
+the output is $0$.
+
+Suppose we have the variables $x$ and $y$, and we want to represent the
+AND operation between them. We can write this as $x \cdot y$ or $xy$ via
+juxtaposition. The output of this operation is $1$ only if both $x$
+and $y$ are $1$.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $xy$ \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $0$ \\
+    $1$ & $0$ & $0$ \\
+    $1$ & $1$ & $1$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the AND Operation with Variables}
+  \label{table:Truth-Table-AND-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-AND-Operation-Variables} shows the truth
+table for the AND operation with variables $x$ and $y$. The output is
+$1$ only if both $x$ and $y$ are $1$; otherwise, the output is $0$.
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercise}
+
+    \begin{enumerate}
+      \item Consider the three input AND operation $xyz$. Write
+      the truth table for this operation and determine the output for
+      each combination of inputs.
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\subsection{OR Operation}
+
+The OR operation is denoted by the symbol $+$. The output of
+the OR operation is $1$ if at least one input is $1$.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $1$ \\
+    $1$ & $0$ & $1$ \\
+    $1$ & $1$ & $1$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the OR Operation}
+  \label{table:Truth-Table-OR-Operation}
+\end{table}
+
+Table \ref{table:Truth-Table-OR-Operation} shows the truth table for the
+OR operation. The output is $1$ if at least one input is $1$; otherwise,
+the output is $0$.
+
+Suppose we have the variables $x$ and $y$, and we want to represent the
+OR operation between them. We can write this as $x + y$. The output of
+this operation is $1$ if at least one of $x$ and $y$ is $1$.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $x + y$ \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $1$ \\
+    $1$ & $0$ & $1$ \\
+    $1$ & $1$ & $1$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the OR Operation with Variables}
+  \label{table:Truth-Table-OR-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-OR-Operation-Variables} shows the truth
+table for the OR operation with variables $x$ and $y$. The output is
+$1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercise}
+
+    Write the truth table for the following OR operations:
+
+    \begin{enumerate}
+      \item $x + y + z$
+      \item $(x + y)z$
+      \item $x + yz$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\subsection{NOT Operation}
+
+The NOT operation is denoted by the symbol $'$. The output of the NOT
+operation is the opposite of the input. If the input is $1$, the output
+is $0$, and vice versa.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c}
+    \hline
+    \textbf{Input} & \textbf{Output} \\
+    \hline
+    $0$ & $1$ \\
+    $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the NOT Operation}
+  \label{table:Truth-Table-NOT-Operation}
+\end{table}
+
+Table \ref{table:Truth-Table-NOT-Operation} shows the truth table for the
+NOT operation. The output is the opposite of the input. If the input is
+$1$, the output is $0$, and vice versa.
+
+Suppose we have the variable $x$, and we want to represent the NOT
+operation on it. We can write this as $x'$. The output of this operation
+is the opposite of $x$.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c}
+    \hline
+    \textbf{Input} & \textbf{Output} \\
+    \hline
+    $x$ & $x'$ \\
+    \hline
+    $0$ & $1$ \\
+    $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the NOT Operation with Variables}
+  \label{table:Truth-Table-NOT-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-NOT-Operation-Variables} shows the truth
+table for the NOT operation with variable $x$. The output is the opposite
+of $x$. If $x$ is $1$, the output is $0$; if $x$ is $0$, the output is $1$.
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercise}
+
+    Write the truth table for the following NOT operations:
+
+    \begin{enumerate}
+      \item $x'$
+      \item $(x')'$
+      \item $(x + y)'$
+      \item $(x \cdot y)'$
+      \item $(x + yz)'$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\section{Other Operations}
+
+In addition to the fundamental operations of AND, OR, and NOT, there are
+several other operations in Boolean Algebra that are commonly used. These
+operations include:
+
+\begin{itemize}
+  \item \textbf{XOR} - The XOR operation takes two inputs and produces a
+    $1$ output if the inputs are different.
+  \item \textbf{NAND} - The NAND operation is the complement of the AND
+    operation. The output of the NAND operation is $0$ only if all inputs
+    are $1$.
+  \item \textbf{NOR} - The NOR operation is the complement of the OR
+    operation. The output of the NOR operation is $0$ if at least one input
+    is $1$.
+  \item \textbf{XNOR} - The XNOR operation is the complement of the XOR
+    operation. The output of the XNOR operation is $1$ if the inputs are
+    the same.
+\end{itemize}
+
+\section{Boolean Variables and Expressions}
+
+\section{Boolean Functions}
+
+\section{Laws of Boolean Algebra}
+
+\chapter{Logic Gates and Circuits}
+
+\section{Introduction}
+
+\section{Logic Gates and Circuits}
+
+\section{Minimization of Circuits}
+
+\section{Binary Arithmetic and Representation}
+
+\chapter{Graph Theory}
+
+\section{Introduction}
+
+\section{Graphs}
+
+\subsection{Terms and Definitions}
+
+\subsection{Paths and Cycles}
+
+\subsection{Hamiltonian Cycles}
+
+\subsection{Shortest Path Algorithms}
+
+\subsection{Representation of Graphs}
+
+\subsection{Isomorphism of Graphs}
+
+\subsection{Planar Graphs}
+
+\section{Trees}
+
+\subsection{Terms and Definitions}
+
+\subsection{Spanning Trees}
+
+\subsection{Binary Trees}
+
+\subsection{Tree Traversals}
+
+\subsection{Decision Trees}
+
+\subsection{Isomorphism of Trees}
+
+\chapter{Network Models and Petri Nets}
+
+\section{Network Models}
+
+\section{Maximal Flow Algorithm}
+
+\section{Max Flow, Min Cut Theorem}
+
+\section{Matching}
+
+\section{Petri Nets}
+
+\chapter{Automata, Grammars and Languages}
+
+\section{Languages and Grammars}
+
+\section{Finite State Automata}
+
+\section{Regular Expressions}
+
+\chapter{Computational Geometry}
+
+\section{Basics of Computational Geometry}
+
+\section{Closest-Pair Problem}
+
+\section{Convex Hull Algorithm}
+
+\section{Voronoi Diagrams}
+
+\section{Line Segment Intersection}
+
+\section{Applications in Computer Graphics and Geographical Information Systems}
+
+\chapter{References}
+
+\begin{enumerate}[label={\Alph*.}]
+  \item \textbf{Books}
+    \begin{itemize}
+      \item 
+    \end{itemize}
+  \item \textbf{Other Sources}
+    \begin{itemize}
+      \item 
+    \end{itemize}
+\end{enumerate}
+
+\end{document}
