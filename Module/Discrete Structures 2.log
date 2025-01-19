@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.18)  19 JAN 2025 14:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.18)  19 JAN 2025 22:57
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1137,40 +1137,59 @@ Overfull \hbox (10.44998pt too wide) in paragraph at lines 640--659
 
 
 [8]
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 704--733
+[] 
+ []
+
+
+
+[9]
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 800--819
+[] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+
+[10]
+
+[11]
  2.
-
-
-[9
-
-]
- 3.
-
-
-[10
-
-]
- 4.
-
-
-[11
-
-]
- 5.
 
 
 [12
 
 ]
- 6.
+ 3.
 
 
 [13
 
 ]
- 7.
+ 4.
 
 
 [14
+
+]
+ 5.
+
+
+[15
+
+]
+ 6.
+
+
+[16
+
+]
+ 7.
+
+
+[17
 
 ] (./Discrete Structures 2.aux)
  ***********
@@ -1178,21 +1197,21 @@ LaTeX2e <2024-11-01> patch level 1
 L3 programming layer <2024-12-25>
  ***********
 Package rerunfilecheck Info: File `"Discrete Structures 2".out' has not changed.
-(rerunfilecheck)             Checksum: 8E57A47F2327DB9AE2D418C370439300;8925.
+(rerunfilecheck)             Checksum: 6D9D6378D9F9E481452D25C1AF5AF71E;9302.
  ) 
 Here is how much of TeX's memory you used:
- 32216 strings out of 473207
- 597302 string characters out of 5720461
- 1296454 words of memory out of 5000000
- 54549 multiletter control sequences out of 15000+600000
- 667267 words of font info for 224 fonts, out of 8000000 for 9000
+ 32258 strings out of 473207
+ 597781 string characters out of 5720461
+ 1302454 words of memory out of 5000000
+ 54557 multiletter control sequences out of 15000+600000
+ 670673 words of font info for 230 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  117i,11n,121p,1324b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Discrete Structures 2.pdf" (20 pages, 340540 bytes).
+Output written on "Discrete Structures 2.pdf" (23 pages, 349417 bytes).
 PDF statistics:
- 558 PDF objects out of 1000 (max. 8388607)
- 499 compressed objects within 5 object streams
- 109 named destinations out of 1000 (max. 500000)
- 60893 words of extra memory for PDF output out of 61914 (max. 10000000)
+ 605 PDF objects out of 1000 (max. 8388607)
+ 542 compressed objects within 6 object streams
+ 132 named destinations out of 1000 (max. 500000)
+ 62957 words of extra memory for PDF output out of 74296 (max. 10000000)
 

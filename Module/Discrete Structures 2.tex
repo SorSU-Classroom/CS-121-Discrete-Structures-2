@@ -659,6 +659,191 @@ their complements.
 
 \section{Laws of Boolean Algebra}
 
+The laws of Boolean Algebra are a set of rules that define the properties
+of logical operations in Boolean Algebra. These laws are used to simplify
+Boolean expressions and to prove the equivalence of different expressions.
+The laws of Boolean Algebra are based on the properties of logical
+operations such as AND, OR, and NOT.
+
+Boolean algebra's AND operations associates to multiplication in
+arithmetic, while OR operations associates to addition. While the
+NOT operation is simply the complement of the input.
+
+\newpage
+
+% Table of Laws of Boolean Algebra
+% | Laws(2 rows) | Equivalent (2 columns) |
+% |    | AND | OR |
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c c}
+    \hline
+    \textbf{Laws} & \textbf{AND} & \textbf{OR} \\
+    \hline
+    Identity & $x(1) = x$ & $x + 0 = x$ \\
+    Domination & $x(0) = 0$ & $x + 1 = 1$ \\
+    Commutative & $xy = yx$ & $x + y = y + x$ \\
+    Associative & $x(yz) = (xy)z$ & $x + (y + z) = (x + y) + z$ \\
+    Distributive & $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$ \\
+    Inverse & $xx' = 0$ & $x + x' = 1$ \\
+    Involution (Double Negation) & $(x')' = x$ &  \\
+    Indempotent & $xx = x$ & $x + x = x$ \\
+    Absorption & $x(x + y) = x$ & $x + xy = x$ \\
+    De Morgan's Theorem & $(xy)' = x' + y'$ & $(x + y)' = x'y'$ \\
+    \hline
+  \end{tabular}
+  \caption{Laws of Boolean Algebra}
+  \label{table:Laws-Boolean-Algebra}
+\end{table}
+
+Table \ref{table:Laws-Boolean-Algebra} shows the laws of Boolean Algebra.
+These laws are used to simplify Boolean expressions and to prove the
+equivalence of different expressions. The laws are based on the properties
+of logical operations such as AND, OR, and NOT.
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercises}
+
+    \begin{enumerate}
+      \item Verify the following laws of Boolean Algebra:
+      \begin{enumerate}
+        \item Identity Law: $x + 0 = x$
+        \item Commutative Law: $xy = yx$
+        \item Associative Law: $x(yz) = (xy)z$
+        \item Distributive Law: $x(y + z) = xy + xz$
+        \item Inverse Law: $xx' = 0$
+        \item Involution Law: $(x')' = x$
+        \item De Morgan's Theorem: $(xy)' = x' + y'$
+      \end{enumerate}
+  
+      \item Prove the following laws of Boolean Algebra:
+      \begin{enumerate}
+        \item Domination Law: $x + 1 = 1$
+        \item Indempotent Law: $xx = x$
+        \item Absorption Law: $x(x + y) = x$
+      \end{enumerate}
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\section{Simplifying Boolean Expressions}
+
+Boolean expressions can be simplified using the laws of Boolean Algebra.
+Simplifying a Boolean expression involves applying the laws of Boolean
+Algebra to reduce the expression to its simplest form. This process
+involves combining terms, eliminating redundant terms, and applying the
+laws of Boolean Algebra to simplify the expression.
+
+Consider the Boolean expression $f(x, y) = x + x'y$. We can simplify
+this expression using the laws of Boolean Algebra as follows:
+
+\begin{align*}
+  f(x, y) & = x + x'y \\
+  & = (x + x')(x + y) && \text{Distributive Law} \\
+  & = (1)(x + y) && \text{Inverse Law} \\
+  & = x + y && \text{Identity Law}
+  f(x, y) & = x + x'y = x + y
+\end{align*}
+
+The expression $f(x, y) = x + x'y$ can be simplified to $f(x, y) = x + y$
+using the laws of Boolean Algebra.
+
+Consider the Boolean expression $f(x, y, z) = (x + yz') + (xy)'$. We can
+simplify this expression using the laws of Boolean Algebra as follows:
+
+\begin{align*}
+  f(x, y, z) & = (x + yz') + (xy)' \\
+  & = (x + yz') + x' + y' && \text{De Morgan's Theorem} \\
+  & = (x + x') + yz' + y' && \text{Commutative Law} \\
+  & = 1 + yz' + y' && \text{Inverse Law} \\
+  & = 1 && \text{Domination Law}
+\end{align*}
+
+The expression $f(x, y, z) = (x + yz') + (xy)'$ can be simplified to
+$f(x, y, z) = 1$ using the laws of Boolean Algebra.
+
+Consider the Boolean expression $f(x, y) = (x + x'y) + (x + y')$. We
+can simplify this expression using the laws of Boolean Algebra as follows:
+
+\begin{align*}
+  f(x, y) & = (x + x'y) + (x + y') \\
+  & = [(x + x')(x + y)] + (x + y') && \text{Distributive Law} \\
+  & = [1(x + y)] + (x + y') && \text{Inverse Law} \\
+  & = (x + y) + (x + y') && \text{Identity Law} \\
+  & = (y + x) + (x + y') && \text{Commutative Law} \\
+  & = y + (x + x) + y' && \text{Associative Law} \\
+  & = y + x + y' && \text{Indempotent Law} \\
+  & = x + y + y' && \text{Commutative Law} \\
+  & = x + 1 && \text{Inverse Law} \\
+  & = 1 && \text{Domination Law}
+\end{align*}
+
+The expression $f(x, y) = (x + x'y) + (x + y')$ can be simplified
+to $f(x, y) = 1$ using the laws of Boolean Algebra.
+
+% \begin{align*}
+%   f(x, y, z) = [y + x'y + (x + y')]y'
+%   & = [(y + x'y) + (x + y')]y' && \text{Associative Law} \\
+%   & = [y + (x + y')]y' && \text{Absorption Law} \\
+%   & = [(y + y') + x]y' && \text{Commutative Law} \\
+%   & = [1 + x]y' && \text{Inverse Law} \\
+%   & = (1)y' && \text{Domination Law} \\
+%   & = y' && \text{Identity Law}
+% \end{align*}
+
+% Exercises
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercises}
+
+    Simplify the following Boolean expressions using the laws of Boolean
+    Algebra:
+
+    \begin{enumerate}
+      \item $f(x, y) = [xy + (x + y)']'$
+      \item $f(x, y, z) = [y + x'y + (x + y')]y'$
+      \item $f(w, x, y, z) = wx + (x'z') + (y + z')$
+      \item $f(x, y, z) = (x + y)(x + z)$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\section{Principal of Duality}
+
+The \textbf{principle of duality} states that any theorem or identity in
+Boolean Algebra remains valid if we interchange the AND and OR operations
+and the constants $0$ and $1$. In other words, if we replace each AND
+operation with an OR operation, each OR operation with an AND operation,
+each $0$ with a $1$, and each $1$ with a $0$, the resulting expression
+is also valid.
+
+% Table of Principal of Duality Examples
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Expression} & \textbf{Dual Expression} \\
+    \hline
+    $x + y$ & $xy$ \\
+    $x(y + z)$ & $x + yz$ \\
+    $x(y + 0)$ & $x + y \cdot 1$ \\
+    $(x' \cdot 1) + (y' + z)$ & $(x + 1)y'z$ \\
+    $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$ \\
+    \hline
+  \end{tabular}
+  \caption{Examples of the Principle of Duality}
+  \label{table:Examples-Principle-Duality}
+\end{table}
+
 \chapter{Logic Gates and Circuits}
 
 \section{Introduction}
