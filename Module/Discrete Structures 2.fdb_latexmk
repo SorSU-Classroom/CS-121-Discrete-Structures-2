@@ -1,12 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1737263494.76746 "c:/Users/jarri/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-121-Discrete-Structures-2/Module/Discrete Structures 2.tex" "Discrete Structures 2.pdf" "Discrete Structures 2" 1737263498.34176 0
-  "Discrete Structures 2.aux" 1737263496 9509 1d2e105c9223c6802628a6130ecd6623 "pdflatex"
-  "Discrete Structures 2.lof" 1737263496 170 5172fc40d96ddf0ade05c2687a3253b9 "pdflatex"
-  "Discrete Structures 2.lot" 1737263496 1018 caace577090b1908db1521a95376ebce "pdflatex"
-  "Discrete Structures 2.out" 1737263496 8458 460782d646b9dbd4405a7b48772473e3 "pdflatex"
-  "Discrete Structures 2.tex" 1737263486 16318 5d83463c4d7c1e62e21a378b62c6048a ""
-  "Discrete Structures 2.toc" 1737263496 4403 74e331c22531b9a6c6d156ea740205d4 "pdflatex"
-  "c:/Users/jarri/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-121-Discrete-Structures-2/Module/Discrete Structures 2.tex" 1737263486 16318 5d83463c4d7c1e62e21a378b62c6048a ""
+["pdflatex"] 1737267238.25838 "c:/Users/jarri/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-121-Discrete-Structures-2/Module/Discrete Structures 2.tex" "Discrete Structures 2.pdf" "Discrete Structures 2" 1737267242.95886 0
+  "Discrete Structures 2.aux" 1737267240 11775 179f7659963743bef99c40e48bd0a502 "pdflatex"
+  "Discrete Structures 2.lof" 1737267240 170 5172fc40d96ddf0ade05c2687a3253b9 "pdflatex"
+  "Discrete Structures 2.lot" 1737267240 1760 bf2ec48d9b4e349de685b6bad9041128 "pdflatex"
+  "Discrete Structures 2.out" 1737267240 8925 8e57a47f2327db9ae2d418c370439300 "pdflatex"
+  "Discrete Structures 2.tex" 1737267237 24382 1d0f2650f230ccbf60971766f75433ab ""
+  "Discrete Structures 2.toc" 1737267240 4752 94f5ce6116a950ccdec1f725ce875a97 "pdflatex"
+  "c:/Users/jarri/OneDrive - thevailacademy.org/Documents/SorSU/__Repository__/CS-121-Discrete-Structures-2/Module/Discrete Structures 2.tex" 1737267237 24382 1d0f2650f230ccbf60971766f75433ab ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc" 1737124372 2375 baa924870cfb487815765f9094cf3728 ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc" 1737124372 2405 5dcf2c1b967ee25cc46c58cd52244aed ""
   "c:/texlive/2024/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1737124372 2840 216e6e45ad352e2456e1149f28885bee ""
@@ -56,6 +56,7 @@
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb" 1737124373 116908 9a7a12d1e4df280ea0ab4aad83cdef88 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb" 1737124373 116427 4909e80035dae5d5a4ec2b5ddd9649dd ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb" 1737124373 30388 702fae6a5f0e6e9c48a1d872b442ffcf ""
+  "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb" 1737124373 30635 833ec815d446ec453a4913fc26d24cbc ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb" 1737124373 119235 05e5c8d6d60439433e50047898c2c0e0 ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb" 1737124373 113634 9384aebdf26f9881e046a4b5574566db ""
   "c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb" 1737124373 119752 1bd8d06e4079df624bf59ce3ad7c9aa6 ""

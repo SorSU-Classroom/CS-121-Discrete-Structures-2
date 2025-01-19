@@ -197,7 +197,10 @@ output is the set of elements that are common to all input sets.
 \subsection{AND Operation}
 
 The AND operation is denoted by the symbol $\cdot$ or juxtaposition. The
-output of the AND operation is $1$ only if all inputs are $1$.
+output of the AND operation is $1$ only if all inputs are $1$. In Boolean
+Algebra, the AND operation is represented by the multiplication symbol
+$\cdot$ or by juxtaposition. \textbf{Juxtaposition} is the act of placing
+two or more things side by side or close together.
 
 \begin{table}[!h]
   \centering
@@ -218,6 +221,8 @@ output of the AND operation is $1$ only if all inputs are $1$.
 Table \ref{table:Truth-Table-AND-Operation} shows the truth table for the
 AND operation. The output is $1$ only if both inputs are $1$; otherwise,
 the output is $0$.
+
+\newpage
 
 Suppose we have the variables $x$ and $y$, and we want to represent the
 AND operation between them. We can write this as $x \cdot y$ or $xy$ via
@@ -265,7 +270,8 @@ $1$ only if both $x$ and $y$ are $1$; otherwise, the output is $0$.
 \subsection{OR Operation}
 
 The OR operation is denoted by the symbol $+$. The output of
-the OR operation is $1$ if at least one input is $1$.
+the OR operation is $1$ if at least one input is $1$. In Boolean
+Algebra, the OR operation is represented by the addition symbol $+$.
 
 \begin{table}[!h]
   \centering
@@ -322,9 +328,9 @@ $1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
     Write the truth table for the following OR operations:
 
     \begin{enumerate}
-      \item $x + y + z$
-      \item $(x + y)z$
-      \item $x + yz$
+      \item $f(x, y, z) = x + y + z$
+      \item $f(x, y, z) = (x + y)z$
+      \item $f(x, y, z) = x + yz$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -335,7 +341,8 @@ $1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
 
 The NOT operation is denoted by the symbol $'$. The output of the NOT
 operation is the opposite of the input. If the input is $1$, the output
-is $0$, and vice versa.
+is $0$, and vice versa. In Boolean Algebra, the NOT operation is
+represented by the prime symbol $'$ or by an overline.
 
 \begin{table}[!h]
   \centering
@@ -356,8 +363,8 @@ NOT operation. The output is the opposite of the input. If the input is
 $1$, the output is $0$, and vice versa.
 
 Suppose we have the variable $x$, and we want to represent the NOT
-operation on it. We can write this as $x'$. The output of this operation
-is the opposite of $x$.
+operation on it. We can write this as $x'$ or $\overline{x}$. The output
+of this operation is the opposite or complement of $x$.
 
 \begin{table}[!h]
   \centering
@@ -388,11 +395,10 @@ of $x$. If $x$ is $1$, the output is $0$; if $x$ is $0$, the output is $1$.
     Write the truth table for the following NOT operations:
 
     \begin{enumerate}
-      \item $x'$
-      \item $(x')'$
-      \item $(x + y)'$
-      \item $(x \cdot y)'$
-      \item $(x + yz)'$
+      \item $f(x) = (x')'$
+      \item $f(x, y) = (x + y)'$
+      \item $f(x, y) = (x \cdot y)'$
+      \item $f(x, y, z) = (x + yz)'$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -419,9 +425,236 @@ operations include:
     the same.
 \end{itemize}
 
-\section{Boolean Variables and Expressions}
+\subsection{XOR Operation}
+
+The XOR operation is denoted by the symbol $\oplus$. The output of the XOR
+operation is $1$ if the inputs are different. In Boolean Algebra, the XOR
+operation is represented by the symbol $\oplus$. If the XOR operation takes
+more than two inputs, it is called the \textbf{parity function}. A parity
+function is a function that determines whether the number of inputs that
+are $1$ is even or odd.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $1$ \\
+    $1$ & $0$ & $1$ \\
+    $1$ & $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the XOR Operation}
+  \label{table:Truth-Table-XOR-Operation}
+\end{table}
+
+Table \ref{table:Truth-Table-XOR-Operation} shows the truth table for the
+XOR operation. The output is $1$ if the inputs are different; otherwise,
+the output is $0$.
+
+Suppose we have the variables $x$ and $y$, and we want to represent the
+XOR operation between them. We can write this as $x \oplus y$. The output
+of this operation is $1$ if $x$ and $y$ are different.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $x \oplus y$ \\
+    \hline
+    $0$ & $0$ & $0$ \\
+    $0$ & $1$ & $1$ \\
+    $1$ & $0$ & $1$ \\
+    $1$ & $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the XOR Operation with Variables}
+  \label{table:Truth-Table-XOR-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-XOR-Operation-Variables} shows the truth
+table for the XOR operation with variables $x$ and $y$. The output is $1$
+if $x$ and $y$ are different; otherwise, the output is $0$.
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercise}
+
+    Write the truth table for the following XOR operations:
+
+    \begin{enumerate}
+      \item $f(x, y, z) = (x \oplus y)z$
+      \item $f(x, y, z) = x \oplus yz$
+      \item $f(x, y, z) = x \oplus y \oplus z$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\subsection{NAND Operation}
+
+The NAND operation is simply the complement of the AND operation.
+The output of the NAND operation is $0$ only if all inputs are $1$.
+In Boolean Algebra, the NAND operation is represented by putting
+an overline or $'$ over the AND operation.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $(xy)'$ \\
+    \hline
+    $0$ & $0$ & $1$ \\
+    $0$ & $1$ & $1$ \\
+    $1$ & $0$ & $1$ \\
+    $1$ & $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the NAND Operation with Variables}
+  \label{table:Truth-Table-NAND-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-NAND-Operation-Variables} shows the truth
+table for the NAND operation with variables $x$ and $y$. The output is
+$0$ only if both $x$ and $y$ are $1$; otherwise, the output is $1$.
+
+\subsection{NOR Operation}
+
+The NOR operation is simply the complement of the OR operation. The
+output of the NOR operation is $0$ if at least one input is $1$. In
+Boolean Algebra, the NOR operation is represented by putting an overline
+or $'$ over the OR operation.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $(x + y)'$ \\
+    \hline
+    $0$ & $0$ & $1$ \\
+    $0$ & $1$ & $0$ \\
+    $1$ & $0$ & $0$ \\
+    $1$ & $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the NOR Operation with Variables}
+  \label{table:Truth-Table-NOR-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-NOR-Operation-Variables} shows the truth
+table for the NOR operation with variables $x$ and $y$. The output is
+$0$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $1$.
+
+\subsection{XNOR Operation}
+
+The XNOR operation is simply the complement of the XOR operation. The
+output of the XNOR operation is $1$ if the inputs are the same. In
+Boolean Algebra, the XNOR operation is represented by putting an overline
+or $'$ over the XOR operation.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c}
+    \hline
+    \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
+    \hline
+    $x$ & $y$ & $(x \oplus y)'$ \\
+    \hline
+    $0$ & $0$ & $1$ \\
+    $0$ & $1$ & $0$ \\
+    $1$ & $0$ & $0$ \\
+    $1$ & $1$ & $1$ \\
+    \hline
+  \end{tabular}
+  \caption{Truth Table for the XNOR Operation with Variables}
+  \label{table:Truth-Table-XNOR-Operation-Variables}
+\end{table}
+
+Table \ref{table:Truth-Table-XNOR-Operation-Variables} shows the truth
+table for the XNOR operation with variables $x$ and $y$. The output is
+$1$ if $x$ and $y$ are the same; otherwise, the output is $0$.
+
+\section{Tautology and Fallacy}
+
+In Boolean Algebra, a \textbf{tautology} is a statement that is always
+\textcolor{ForestGreen}{TRUE}, regardless of the values of its variables.
+A \textbf{fallacy} is a statement that is always \textcolor{red}{FALSE},
+regardless of the values of its variables.
+
+\begin{table}[!h]
+  \centering
+  \begin{tabular}{c c c c}
+    \hline
+    \textbf{$x$} & \textbf{$x'$} & \textbf{$x + x'$} & \textbf{$xx'$} \\
+    \hline
+    $0$ & $1$ & $1$ & $0$ \\
+    $1$ & $0$ & $1$ & $0$ \\
+    \hline
+  \end{tabular}
+  \caption{Examples of Tautologies and Fallacies}
+  \label{table:Examples-Tautologies-Fallacies}
+\end{table}
+
+Table \ref{table:Examples-Tautologies-Fallacies} shows examples of
+tautologies and fallacies. The expression $x + x'$ is a tautology because
+it is always \textcolor{ForestGreen}{TRUE}, regardless of the value of
+$x$. The expression $xx'$ is a fallacy because it is always
+\textcolor{red}{FALSE}, regardless of the value of $x$.
 
 \section{Boolean Functions}
+
+A \textbf{Boolean function} is a function that takes one or more Boolean
+variables as input and produces a Boolean output. Boolean functions are
+used to represent logical operations in Boolean Algebra. The output of a
+Boolean function is determined by the values of its input variables and
+the logical operations applied to them. It is also known as a 
+\textbf{switching function}. Boolean variables are variables that can
+take on one of two values: $0$ or $1$. In Boolean Algebra, variables
+are typically denoted by letters such as $x$, $y$, $z$, etc. The
+values of these variables represent logical values: $0$ corresponds
+to \textcolor{red}{FALSE}, and $1$ corresponds to
+\textcolor{ForestGreen}{TRUE}.
+
+A Boolean function is a function in the form $f: B^n \rightarrow B$,
+where $B = \{0, 1\}$ is the set of Boolean values, and $n$ is the
+number of input variables and is called the \textbf{arity} of the
+function.
+
+A \textbf{literal} is a variable or its complement. For example, $x$
+and $x'$ are literals. In the boolean function $f = (x + yz) + x'$,
+there are three variables: $x$, $y$, and $z$. The literals in this
+function are $x$, $y$, $z$, and $x'$ which are the variables and
+their complements.
+
+% Exercises
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercises}
+
+    Write the truth table for the following Boolean functions:
+
+    \begin{enumerate}
+      \item $f(x, y) = [xy + (x + y)']'$
+      \item $f(x, y) = (x + y) \oplus (xy)'$
+      \item $f(x, y, z) = x(y + z')$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
 
 \section{Laws of Boolean Algebra}
 
