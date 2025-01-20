@@ -687,7 +687,7 @@ NOT operation is simply the complement of the input.
     Distributive & $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$ \\
     Inverse & $xx' = 0$ & $x + x' = 1$ \\
     Involution (Double Negation) & $(x')' = x$ &  \\
-    Indempotent & $xx = x$ & $x + x = x$ \\
+    Idempotent & $xx = x$ & $x + x = x$ \\
     Absorption & $x(x + y) = x$ & $x + xy = x$ \\
     De Morgan's Theorem & $(xy)' = x' + y'$ & $(x + y)' = x'y'$ \\
     \hline
@@ -722,7 +722,7 @@ of logical operations such as AND, OR, and NOT.
       \item Prove the following laws of Boolean Algebra:
       \begin{enumerate}
         \item Domination Law: $x + 1 = 1$
-        \item Indempotent Law: $xx = x$
+        \item Idempotent Law: $x + x = x$
         \item Absorption Law: $x(x + y) = x$
       \end{enumerate}
     \end{enumerate}
@@ -777,7 +777,7 @@ can simplify this expression using the laws of Boolean Algebra as follows:
   & = (x + y) + (x + y') && \text{Identity Law} \\
   & = (y + x) + (x + y') && \text{Commutative Law} \\
   & = y + (x + x) + y' && \text{Associative Law} \\
-  & = y + x + y' && \text{Indempotent Law} \\
+  & = y + x + y' && \text{Idempotent Law} \\
   & = x + y + y' && \text{Commutative Law} \\
   & = x + 1 && \text{Inverse Law} \\
   & = 1 && \text{Domination Law}
@@ -807,10 +807,10 @@ to $f(x, y) = 1$ using the laws of Boolean Algebra.
     Algebra:
 
     \begin{enumerate}
-      \item $f(x, y) = [xy + (x + y)']'$
       \item $f(x, y, z) = [y + x'y + (x + y')]y'$
       \item $f(w, x, y, z) = wx + (x'z') + (y + z')$
       \item $f(x, y, z) = (x + y)(x + z)$
+      \item $f(x, y) = [xy + (x + y)']'$
     \end{enumerate}
 
     \hspace{0.5em}
