@@ -718,7 +718,7 @@ of logical operations such as AND, OR, and NOT.
         \item Involution Law: $(x')' = x$
         \item De Morgan's Theorem: $(xy)' = x' + y'$
       \end{enumerate}
-  
+ 
       \item Prove the following laws of Boolean Algebra:
       \begin{enumerate}
         \item Domination Law: $x + 1 = 1$
@@ -826,6 +826,8 @@ operation with an OR operation, each OR operation with an AND operation,
 each $0$ with a $1$, and each $1$ with a $0$, the resulting expression
 is also valid.
 
+\newpage
+
 % Table of Principal of Duality Examples
 \begin{table}[!h]
   \centering
@@ -843,6 +845,33 @@ is also valid.
   \caption{Examples of the Principle of Duality}
   \label{table:Examples-Principle-Duality}
 \end{table}
+
+Table \ref{table:Examples-Principle-Duality} shows examples of the
+principle of duality. The dual expression of $x + y$ is $xy$. The dual
+expression of $x(y + z)$ is $x + yz$. The dual expression of $x(y + 0)$
+is $x + y \cdot 1$. The dual expression of $(x' \cdot 1) + (y' + z)$
+is $(x + 1)y'z$. The dual expression of $x(y + z) = xy + xz$ is
+$x + yz = (x + y)(x + z)$.
+
+% Exercises
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+    
+    \textbf{Exercises}
+
+    Find the dual expression for the following Boolean expressions:
+
+    \begin{enumerate}
+      \item $xy(x + z)$
+      \item $x + (xy + z')y$
+      \item $x(y + z) + x'$
+      \item $(x + y)(x + z) + yz$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
 
 \chapter{Logic Gates and Circuits}
 
