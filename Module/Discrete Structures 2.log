@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.18)  20 JAN 2025 13:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2025.1.18)  22 JAN 2025 00:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1100,58 +1100,56 @@ Overfull \hbox (10.44998pt too wide) in paragraph at lines 254--269
  []
 
 
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 322--339
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 322--341
 [] 
  []
 
 
 
 [4]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 389--407
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 391--415
 [] 
  []
 
 
 
 [5]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 483--499
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 491--509
 [] 
  []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 
 
 [6]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-
 [7]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 640--659
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 650--669
 [] 
  []
 
 
 
 [8]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 704--733
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 714--743
 [] 
  []
 
 
 
 [9]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 800--819
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 810--837
+[] 
+ []
+
+
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 838--853
 [] 
  []
 
 
 
 [10]
-Overfull \hbox (10.44998pt too wide) in paragraph at lines 857--875
+Overfull \hbox (10.44998pt too wide) in paragraph at lines 888--912
 [] 
  []
 
@@ -1202,18 +1200,18 @@ Package rerunfilecheck Info: File `"Discrete Structures 2".out' has not changed.
 (rerunfilecheck)             Checksum: 6D9D6378D9F9E481452D25C1AF5AF71E;9302.
  ) 
 Here is how much of TeX's memory you used:
- 32264 strings out of 473207
- 597829 string characters out of 5720461
- 1300454 words of memory out of 5000000
+ 32291 strings out of 473207
+ 598020 string characters out of 5720461
+ 1304452 words of memory out of 5000000
  54557 multiletter control sequences out of 15000+600000
  670756 words of font info for 231 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 117i,11n,121p,1324b,602s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 117i,11n,121p,1324b,578s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmbx12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmmi8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr7.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmro10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/texlive/2024/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on "Discrete Structures 2.pdf" (23 pages, 350110 bytes).
+Output written on "Discrete Structures 2.pdf" (23 pages, 351014 bytes).
 PDF statistics:
- 611 PDF objects out of 1000 (max. 8388607)
- 548 compressed objects within 6 object streams
- 136 named destinations out of 1000 (max. 500000)
+ 644 PDF objects out of 1000 (max. 8388607)
+ 581 compressed objects within 6 object streams
+ 163 named destinations out of 1000 (max. 500000)
  62957 words of extra memory for PDF output out of 74296 (max. 10000000)
 

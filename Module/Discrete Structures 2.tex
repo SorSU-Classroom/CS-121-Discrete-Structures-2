@@ -222,12 +222,12 @@ Table \ref{table:Truth-Table-AND-Operation} shows the truth table for the
 AND operation. The output is $1$ only if both inputs are $1$; otherwise,
 the output is $0$.
 
-\newpage
-
 Suppose we have the variables $x$ and $y$, and we want to represent the
 AND operation between them. We can write this as $x \cdot y$ or $xy$ via
 juxtaposition. The output of this operation is $1$ only if both $x$
 and $y$ are $1$.
+
+\newpage
 
 \begin{table}[!h]
   \centering
@@ -331,6 +331,8 @@ $1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
       \item $f(x, y, z) = x + y + z$
       \item $f(x, y, z) = (x + y)z$
       \item $f(x, y, z) = x + yz$
+      \item $f(x, y, z) = (x + y)(y + z)$
+      \item $f(x, y, z) = x(xy + yz)$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -399,6 +401,12 @@ of $x$. If $x$ is $1$, the output is $0$; if $x$ is $0$, the output is $1$.
       \item $f(x, y) = (x + y)'$
       \item $f(x, y) = (x \cdot y)'$
       \item $f(x, y, z) = (x + yz)'$
+      \item $f(x, y, z) = (x \cdot y + z)'$
+      \item $f(x, y, z) = (x + y)'z$
+      \item $f(x, y, z) = x' + y' + z'$
+      \item $f(x, y, z) = (x + y + z)'$
+      \item $f(x, y, z) = x'yz$
+      \item $f(x, y) = x' + y'(xy + x')$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -491,6 +499,8 @@ if $x$ and $y$ are different; otherwise, the output is $0$.
     \begin{enumerate}
       \item $f(x, y, z) = (x \oplus y)z$
       \item $f(x, y, z) = x \oplus yz$
+      \item $f(x, y, z) = (x \oplus y)(y \oplus z)(z \oplus x)$
+      \item $f(x, y, z) = x' \oplus y \oplus z'$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -807,10 +817,34 @@ to $f(x, y) = 1$ using the laws of Boolean Algebra.
     Algebra:
 
     \begin{enumerate}
+      \item $f(x, y) = (x + y')(x + y)$
+      \item $f(w, x) = w + [w + (wx)]$
+      \item $f(w, x) = (x' + x')'$
+      \item $f(w, x) = (x + x')'$
+      \item $f(w, x, y, z) = w + (wx'yz)$
+      \item $f(w, x, y, z) = w'(wxyz)'$
       \item $f(x, y, z) = [y + x'y + (x + y')]y'$
       \item $f(w, x, y, z) = wx + (x'z') + (y + z')$
       \item $f(x, y, z) = (x + y)(x + z)$
       \item $f(x, y) = [xy + (x + y)']'$
+      \item $f(w, x, y, z) = (w + x' + y + z')y$
+      \item $f(x, y, z) = x + y + (x' + y + z)'$
+    \end{enumerate}
+
+    \hspace{0.5em}
+  }
+}
+
+\noindent\fbox{%
+  \parbox{\textwidth}{
+    \hspace{0.5em}
+
+    % Start at 13
+    \begin{enumerate}
+      \setcounter{enumi}{12}
+      \item $f(x, y, z) = xz + x'y + zy$
+      \item $f(x, y, z) = (x + z)(x' + y)(z + y)$
+      \item $f(x, y, z) = x' + y' + xyz'$
     \end{enumerate}
 
     \hspace{0.5em}
@@ -826,8 +860,6 @@ operation with an OR operation, each OR operation with an AND operation,
 each $0$ with a $1$, and each $1$ with a $0$, the resulting expression
 is also valid.
 
-\newpage
-
 % Table of Principal of Duality Examples
 \begin{table}[!h]
   \centering
@@ -838,8 +870,8 @@ is also valid.
     $x + y$ & $xy$ \\
     $x(y + z)$ & $x + yz$ \\
     $x(y + 0)$ & $x + y \cdot 1$ \\
-    $(x' \cdot 1) + (y' + z)$ & $(x + 1)y'z$ \\
-    $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$ \\
+    $x + 1 = 1$ & $x \cdot 0 = 0$ \\
+    $x + x = x$ & $x \cdot x = x$ \\
     \hline
   \end{tabular}
   \caption{Examples of the Principle of Duality}
@@ -847,11 +879,10 @@ is also valid.
 \end{table}
 
 Table \ref{table:Examples-Principle-Duality} shows examples of the
-principle of duality. The dual expression of $x + y$ is $xy$. The dual
-expression of $x(y + z)$ is $x + yz$. The dual expression of $x(y + 0)$
-is $x + y \cdot 1$. The dual expression of $(x' \cdot 1) + (y' + z)$
-is $(x + 1)y'z$. The dual expression of $x(y + z) = xy + xz$ is
-$x + yz = (x + y)(x + z)$.
+principle of duality. The dual expression of $x + y$ is $xy$, the dual
+expression of $x(y + z)$ is $x + yz$, and so on. The principle of duality
+states that any theorem or identity in Boolean Algebra remains valid if
+we interchange the AND and OR operations and the constants $0$ and $1$.
 
 % Exercises
 \noindent\fbox{%
@@ -860,13 +891,19 @@ $x + yz = (x + y)(x + z)$.
     
     \textbf{Exercises}
 
-    Find the dual expression for the following Boolean expressions:
+    Write the dual expression for the following Boolean expressions:
 
     \begin{enumerate}
-      \item $xy(x + z)$
-      \item $x + (xy + z')y$
+      \item $x + yz$
+      \item $x(y + z)$
+      \item $x + y + z$
       \item $x(y + z) + x'$
-      \item $(x + y)(x + z) + yz$
+      \item $x + y + z + 1$
+      \item $x + x'$
+      \item $x + y + z + 0$
+      \item $x(y + z) + 1$
+      \item $x + y + z + x'$
+      \item $x + y + z + x$
     \end{enumerate}
 
     \hspace{0.5em}
