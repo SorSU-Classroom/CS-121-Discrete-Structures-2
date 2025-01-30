@@ -78,7 +78,7 @@ Sorsogon State University - Bulan Campus taking up the course Discrete Structure
 % Add a dedication paragraph to dedicate your book to someone %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{dedication}
-Sorsogon State University - Bulan Campus
+  Sorsogon State University - Bulan Campus
 \end{dedication}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,7 +98,7 @@ Sorsogon State University - Bulan Campus
 \begin{chapquote}{John von Neumann}
   ``If people do not believe that mathematics is simple, it is only
   because they do not realize how complicated life is.''
-  \end{chapquote}
+\end{chapquote}
 
 \noindent \BookAuthorName \\
 \noindent \url{\BookAuthorURL}
@@ -110,17 +110,16 @@ Sorsogon State University - Bulan Campus
 
 \section{Introduction}
 
-Circuits in computers are made up of millions of tiny switches that
-can be in one of two states: on or off. These switches are controlled
-by electrical signals that represent logical values. The behavior of
-these switches can be described using a mathematical system called
-Boolean Algebra. \textbf{Boolean Algebra} is a branch of mathematics
-that deals with logical values and operations on these values. It is 
-widely used in computer science and engineering to design and analyze
-digital circuits. Computers uses the binary number system, which has
-only two digits: $0$ and $1$ which means ``low voltage'' and ``high
-volt'' respectively. These digits correspond to the logical
-values \textcolor{red}{FALSE} and \textcolor{ForestGreen}{TRUE},
+Circuits in computers are made up of millions of tiny switches that can be in
+one of two states: on or off. These switches are controlled by electrical
+signals that represent logical values. The behavior of these switches can be
+described using a mathematical system called Boolean Algebra. \textbf{Boolean
+  Algebra} is a branch of mathematics that deals with logical values and
+operations on these values. It is widely used in computer science and
+engineering to design and analyze digital circuits. Computers uses the binary
+number system, which has only two digits: $0$ and $1$ which means ``low
+voltage'' and ``high volt'' respectively. These digits correspond to the
+logical values \textcolor{red}{FALSE} and \textcolor{ForestGreen}{TRUE},
 respectively.
 
 \section{History of Boolean Algebra}
@@ -130,77 +129,76 @@ in the 19th century. He was born in 1815 and died in 1864. Boole is best
 known for his work in the field of logic, which laid the foundation for
 modern computer science.
 
-Boole's most famous work is his book \textit{The Laws of Thought}, which
-was published in 1854. In this book, Boole introduced the concept of
-Boolean Algebra, which is a mathematical system for dealing with logical
-values. Boolean Algebra is based on the idea that logical values can be
-represented as either \textcolor{ForestGreen}{TRUE} or \textcolor{red}{FALSE}.
+Boole's most famous work is his book \textit{The Laws of Thought}, which was
+published in 1854. In this book, Boole introduced the concept of Boolean
+Algebra, which is a mathematical system for dealing with logical values.
+Boolean Algebra is based on the idea that logical values can be represented as
+either \textcolor{ForestGreen}{TRUE} or \textcolor{red}{FALSE}.
 
-In 1938, \textbf{Claude Shannon} showed that the two-valued Boolean
-Algebra could be used to describe the operation of electrical switches.
-This discovery laid the foundation for the design of digital circuits
-and computers.
+In 1938, \textbf{Claude Shannon} showed that the two-valued Boolean Algebra
+could be used to describe the operation of electrical switches. This discovery
+laid the foundation for the design of digital circuits and computers.
 
 \section{Fundamental Operations}
 
 The three fundamental operations of Boolean Algebra are:
 
 \begin{itemize}
-\item \textbf{AND} - The AND operation takes two or more inputs and produces a
-  $1$ output only if all inputs are $1$.
-\item \textbf{OR} - The OR operation takes two or more inputs and produces a
-  $1$ output if at least one input is $1$.
-\item \textbf{NOT} - The NOT operation takes a single input and produces
-  the opposite value. If the input is $1$, the output is $0$, and vice versa.
+  \item \textbf{AND} - The AND operation takes two or more inputs and produces a
+        $1$ output only if all inputs are $1$.
+  \item \textbf{OR} - The OR operation takes two or more inputs and produces a
+        $1$ output if at least one input is $1$.
+  \item \textbf{NOT} - The NOT operation takes a single input and produces
+        the opposite value. If the input is $1$, the output is $0$, and vice versa.
 \end{itemize}
 
 \begin{table}[!h]
   \centering
   \begin{tabular}{c c c c}
     \hline
-    \textbf{} & \textbf{Formal Logic} & \textbf{Set Theory} & \textbf{Boolean Algebra} \\
+    \textbf{}                 & \textbf{Formal Logic}    & \textbf{Set Theory} & \textbf{Boolean Algebra} \\
     \hline
-    \textbf{Variables} & p, q, r, ... & A, B, C, ... & x, y, z, ... \\
-    
-    \textbf{Operations} & $\land$, $\lor$, $\lnot$ & $\cap$, $\cup$, $-$ & •, +, ' \\
-    
-    \textbf{Special Elements} & $F$, $T$ & $\emptyset$, U & 0, 1 \\
+    \textbf{Variables}        & p, q, r, ...             & A, B, C, ...        & x, y, z, ...             \\
+
+    \textbf{Operations}       & $\land$, $\lor$, $\lnot$ & $\cap$, $\cup$, $-$ & •, +, '                  \\
+
+    \textbf{Special Elements} & $F$, $T$                 & $\emptyset$, U      & 0, 1                     \\
     \hline
   \end{tabular}
   \caption{Comparison of Formal Logic, Set Theory, and Boolean Algebra}
   \label{table:Comparison-Formal-Logic-Set-Theory-Boolean-Algebra}
 \end{table}
 
-Table \ref{table:Comparison-Formal-Logic-Set-Theory-Boolean-Algebra} shows
-a comparison of the notation used in formal logic, set theory, and Boolean
-Algebra. In formal logic, variables are represented by letters such as
-$p$, $q$, $r$, etc., and the logical operations are represented by symbols
-such as $\land$, $\lor$, and $\lnot$. In set theory, variables are
-represented by capital letters such as $A$, $B$, $C$, etc., and the set
-operations are represented by symbols such as $\cap$, $\cup$, and $-$. In
-Boolean Algebra, variables are represented by letters such as $x$, $y$, $z$,
-etc., and the Boolean operations are represented by symbols such as $\cdot$,
-$+$, and $'$. The special elements in each system are $F$ and $T$ in formal
-logic, $\emptyset$ and $U$ in set theory, and $0$ and $1$ in Boolean Algebra.
+Table \ref{table:Comparison-Formal-Logic-Set-Theory-Boolean-Algebra} shows a
+comparison of the notation used in formal logic, set theory, and Boolean
+Algebra. In formal logic, variables are represented by letters such as $p$,
+$q$, $r$, etc., and the logical operations are represented by symbols such as
+$\land$, $\lor$, and $\lnot$. In set theory, variables are represented by
+capital letters such as $A$, $B$, $C$, etc., and the set operations are
+represented by symbols such as $\cap$, $\cup$, and $-$. In Boolean Algebra,
+variables are represented by letters such as $x$, $y$, $z$, etc., and the
+Boolean operations are represented by symbols such as $\cdot$, $+$, and $'$.
+The special elements in each system are $F$ and $T$ in formal logic,
+$\emptyset$ and $U$ in set theory, and $0$ and $1$ in Boolean Algebra.
 
-Though the notation used in each system is different, the underlying
-concepts are the same. For example, the AND operation in Boolean Algebra
-is similar to the logical conjunction operation in formal logic, where the
-output is \textcolor{ForestGreen}{TRUE} only if all inputs are
-\textcolor{ForestGreen}{TRUE}. Similarly, the OR operation in Boolean
-Algebra is similar to the logical disjunction operation in formal logic,
-where the output is \textcolor{ForestGreen}{TRUE} if at least one input is
-\textcolor{ForestGreen}{TRUE}. Compared to set theory, the AND operation
-in Boolean Algebra is similar to the intersection operation, where the
-output is the set of elements that are common to all input sets.
+Though the notation used in each system is different, the underlying concepts
+are the same. For example, the AND operation in Boolean Algebra is similar to
+the logical conjunction operation in formal logic, where the output is
+\textcolor{ForestGreen}{TRUE} only if all inputs are
+\textcolor{ForestGreen}{TRUE}. Similarly, the OR operation in Boolean Algebra
+is similar to the logical disjunction operation in formal logic, where the
+output is \textcolor{ForestGreen}{TRUE} if at least one input is
+\textcolor{ForestGreen}{TRUE}. Compared to set theory, the AND operation in
+Boolean Algebra is similar to the intersection operation, where the output is
+the set of elements that are common to all input sets.
 
 \subsection{AND Operation}
 
-The AND operation is denoted by the symbol $\cdot$ or juxtaposition. The
-output of the AND operation is $1$ only if all inputs are $1$. In Boolean
-Algebra, the AND operation is represented by the multiplication symbol
-$\cdot$ or by juxtaposition. \textbf{Juxtaposition} is the act of placing
-two or more things side by side or close together.
+The AND operation is denoted by the symbol $\cdot$ or juxtaposition. The output
+of the AND operation is $1$ only if all inputs are $1$. In Boolean Algebra, the
+AND operation is represented by the multiplication symbol $\cdot$ or by
+juxtaposition. \textbf{Juxtaposition} is the act of placing two or more things
+side by side or close together.
 
 \begin{table}[!h]
   \centering
@@ -208,24 +206,24 @@ two or more things side by side or close together.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $0$ \\
-    $1$ & $0$ & $0$ \\
-    $1$ & $1$ & $1$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $0$             \\
+    $1$              & $0$              & $0$             \\
+    $1$              & $1$              & $1$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the AND Operation}
   \label{table:Truth-Table-AND-Operation}
 \end{table}
 
-Table \ref{table:Truth-Table-AND-Operation} shows the truth table for the
-AND operation. The output is $1$ only if both inputs are $1$; otherwise,
-the output is $0$.
+Table \ref{table:Truth-Table-AND-Operation} shows the truth table for the AND
+operation. The output is $1$ only if both inputs are $1$; otherwise, the output
+is $0$.
 
-Suppose we have the variables $x$ and $y$, and we want to represent the
-AND operation between them. We can write this as $x \cdot y$ or $xy$ via
-juxtaposition. The output of this operation is $1$ only if both $x$
-and $y$ are $1$.
+Suppose we have the variables $x$ and $y$, and we want to represent the AND
+operation between them. We can write this as $x \cdot y$ or $xy$ via
+juxtaposition. The output of this operation is $1$ only if both $x$ and $y$ are
+$1$.
 
 \newpage
 
@@ -235,32 +233,31 @@ and $y$ are $1$.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $xy$ \\
+    $x$              & $y$              & $xy$            \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $0$ \\
-    $1$ & $0$ & $0$ \\
-    $1$ & $1$ & $1$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $0$             \\
+    $1$              & $0$              & $0$             \\
+    $1$              & $1$              & $1$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the AND Operation with Variables}
   \label{table:Truth-Table-AND-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-AND-Operation-Variables} shows the truth
-table for the AND operation with variables $x$ and $y$. The output is
-$1$ only if both $x$ and $y$ are $1$; otherwise, the output is $0$.
+Table \ref{table:Truth-Table-AND-Operation-Variables} shows the truth table for
+the AND operation with variables $x$ and $y$. The output is $1$ only if both
+$x$ and $y$ are $1$; otherwise, the output is $0$.
 
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercise}
 
     \begin{enumerate}
-      \item Consider the three input AND operation $xyz$. Write
-      the truth table for this operation and determine the output for
-      each combination of inputs.
+      \item Consider the three input AND operation $xyz$. Write the truth table for this
+            operation and determine the output for each combination of inputs.
     \end{enumerate}
 
     \hspace{0.5em}
@@ -269,9 +266,9 @@ $1$ only if both $x$ and $y$ are $1$; otherwise, the output is $0$.
 
 \subsection{OR Operation}
 
-The OR operation is denoted by the symbol $+$. The output of
-the OR operation is $1$ if at least one input is $1$. In Boolean
-Algebra, the OR operation is represented by the addition symbol $+$.
+The OR operation is denoted by the symbol $+$. The output of the OR operation
+is $1$ if at least one input is $1$. In Boolean Algebra, the OR operation is
+represented by the addition symbol $+$.
 
 \begin{table}[!h]
   \centering
@@ -279,23 +276,23 @@ Algebra, the OR operation is represented by the addition symbol $+$.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $1$ \\
-    $1$ & $0$ & $1$ \\
-    $1$ & $1$ & $1$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $1$             \\
+    $1$              & $0$              & $1$             \\
+    $1$              & $1$              & $1$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the OR Operation}
   \label{table:Truth-Table-OR-Operation}
 \end{table}
 
-Table \ref{table:Truth-Table-OR-Operation} shows the truth table for the
-OR operation. The output is $1$ if at least one input is $1$; otherwise,
-the output is $0$.
+Table \ref{table:Truth-Table-OR-Operation} shows the truth table for the OR
+operation. The output is $1$ if at least one input is $1$; otherwise, the
+output is $0$.
 
-Suppose we have the variables $x$ and $y$, and we want to represent the
-OR operation between them. We can write this as $x + y$. The output of
-this operation is $1$ if at least one of $x$ and $y$ is $1$.
+Suppose we have the variables $x$ and $y$, and we want to represent the OR
+operation between them. We can write this as $x + y$. The output of this
+operation is $1$ if at least one of $x$ and $y$ is $1$.
 
 \begin{table}[!h]
   \centering
@@ -303,26 +300,26 @@ this operation is $1$ if at least one of $x$ and $y$ is $1$.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $x + y$ \\
+    $x$              & $y$              & $x + y$         \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $1$ \\
-    $1$ & $0$ & $1$ \\
-    $1$ & $1$ & $1$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $1$             \\
+    $1$              & $0$              & $1$             \\
+    $1$              & $1$              & $1$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the OR Operation with Variables}
   \label{table:Truth-Table-OR-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-OR-Operation-Variables} shows the truth
-table for the OR operation with variables $x$ and $y$. The output is
-$1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
+Table \ref{table:Truth-Table-OR-Operation-Variables} shows the truth table for
+the OR operation with variables $x$ and $y$. The output is $1$ if at least one
+of $x$ and $y$ is $1$; otherwise, the output is $0$.
 
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercise}
 
     Write the truth table for the following operations:
@@ -341,10 +338,10 @@ $1$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $0$.
 
 \subsection{NOT Operation}
 
-The NOT operation is denoted by the symbol $'$. The output of the NOT
-operation is the opposite of the input. If the input is $1$, the output
-is $0$, and vice versa. In Boolean Algebra, the NOT operation is
-represented by the prime symbol $'$ or by an overline.
+The NOT operation is denoted by the symbol $'$. The output of the NOT operation
+is the opposite of the input. If the input is $1$, the output is $0$, and vice
+versa. In Boolean Algebra, the NOT operation is represented by the prime symbol
+$'$ or by an overline.
 
 \begin{table}[!h]
   \centering
@@ -352,21 +349,21 @@ represented by the prime symbol $'$ or by an overline.
     \hline
     \textbf{Input} & \textbf{Output} \\
     \hline
-    $0$ & $1$ \\
-    $1$ & $0$ \\
+    $0$            & $1$             \\
+    $1$            & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the NOT Operation}
   \label{table:Truth-Table-NOT-Operation}
 \end{table}
 
-Table \ref{table:Truth-Table-NOT-Operation} shows the truth table for the
-NOT operation. The output is the opposite of the input. If the input is
-$1$, the output is $0$, and vice versa.
+Table \ref{table:Truth-Table-NOT-Operation} shows the truth table for the NOT
+operation. The output is the opposite of the input. If the input is $1$, the
+output is $0$, and vice versa.
 
-Suppose we have the variable $x$, and we want to represent the NOT
-operation on it. We can write this as $x'$ or $\overline{x}$. The output
-of this operation is the opposite or complement of $x$.
+Suppose we have the variable $x$, and we want to represent the NOT operation on
+it. We can write this as $x'$ or $\overline{x}$. The output of this operation
+is the opposite or complement of $x$.
 
 \begin{table}[!h]
   \centering
@@ -374,24 +371,24 @@ of this operation is the opposite or complement of $x$.
     \hline
     \textbf{Input} & \textbf{Output} \\
     \hline
-    $x$ & $x'$ \\
+    $x$            & $x'$            \\
     \hline
-    $0$ & $1$ \\
-    $1$ & $0$ \\
+    $0$            & $1$             \\
+    $1$            & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the NOT Operation with Variables}
   \label{table:Truth-Table-NOT-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-NOT-Operation-Variables} shows the truth
-table for the NOT operation with variable $x$. The output is the opposite
-of $x$. If $x$ is $1$, the output is $0$; if $x$ is $0$, the output is $1$.
+Table \ref{table:Truth-Table-NOT-Operation-Variables} shows the truth table for
+the NOT operation with variable $x$. The output is the opposite of $x$. If $x$
+is $1$, the output is $0$; if $x$ is $0$, the output is $1$.
 
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercise}
 
     Write the truth table for the following operations:
@@ -421,16 +418,16 @@ operations include:
 
 \begin{itemize}
   \item \textbf{XOR} - The XOR operation takes two inputs and produces a
-    $1$ output if the inputs are different.
+        $1$ output if the inputs are different.
   \item \textbf{NAND} - The NAND operation is the complement of the AND
-    operation. The output of the NAND operation is $0$ only if all inputs
-    are $1$.
+        operation. The output of the NAND operation is $0$ only if all inputs
+        are $1$.
   \item \textbf{NOR} - The NOR operation is the complement of the OR
-    operation. The output of the NOR operation is $0$ if at least one input
-    is $1$.
+        operation. The output of the NOR operation is $0$ if at least one input
+        is $1$.
   \item \textbf{XNOR} - The XNOR operation is the complement of the XOR
-    operation. The output of the XNOR operation is $1$ if the inputs are
-    the same.
+        operation. The output of the XNOR operation is $1$ if the inputs are
+        the same.
 \end{itemize}
 
 \subsection{XOR Operation}
@@ -439,8 +436,8 @@ The XOR operation is denoted by the symbol $\oplus$. The output of the XOR
 operation is $1$ if the inputs are different. In Boolean Algebra, the XOR
 operation is represented by the symbol $\oplus$. If the XOR operation takes
 more than two inputs, it is called the \textbf{parity function}. A parity
-function is a function that determines whether the number of inputs that
-are $1$ is even or odd.
+function is a function that determines whether the number of inputs that are
+$1$ is even or odd.
 
 \begin{table}[!h]
   \centering
@@ -448,23 +445,23 @@ are $1$ is even or odd.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $1$ \\
-    $1$ & $0$ & $1$ \\
-    $1$ & $1$ & $0$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $1$             \\
+    $1$              & $0$              & $1$             \\
+    $1$              & $1$              & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the XOR Operation}
   \label{table:Truth-Table-XOR-Operation}
 \end{table}
 
-Table \ref{table:Truth-Table-XOR-Operation} shows the truth table for the
-XOR operation. The output is $1$ if the inputs are different; otherwise,
-the output is $0$.
+Table \ref{table:Truth-Table-XOR-Operation} shows the truth table for the XOR
+operation. The output is $1$ if the inputs are different; otherwise, the output
+is $0$.
 
-Suppose we have the variables $x$ and $y$, and we want to represent the
-XOR operation between them. We can write this as $x \oplus y$. The output
-of this operation is $1$ if $x$ and $y$ are different.
+Suppose we have the variables $x$ and $y$, and we want to represent the XOR
+operation between them. We can write this as $x \oplus y$. The output of this
+operation is $1$ if $x$ and $y$ are different.
 
 \begin{table}[!h]
   \centering
@@ -472,26 +469,26 @@ of this operation is $1$ if $x$ and $y$ are different.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $x \oplus y$ \\
+    $x$              & $y$              & $x \oplus y$    \\
     \hline
-    $0$ & $0$ & $0$ \\
-    $0$ & $1$ & $1$ \\
-    $1$ & $0$ & $1$ \\
-    $1$ & $1$ & $0$ \\
+    $0$              & $0$              & $0$             \\
+    $0$              & $1$              & $1$             \\
+    $1$              & $0$              & $1$             \\
+    $1$              & $1$              & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the XOR Operation with Variables}
   \label{table:Truth-Table-XOR-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-XOR-Operation-Variables} shows the truth
-table for the XOR operation with variables $x$ and $y$. The output is $1$
-if $x$ and $y$ are different; otherwise, the output is $0$.
+Table \ref{table:Truth-Table-XOR-Operation-Variables} shows the truth table for
+the XOR operation with variables $x$ and $y$. The output is $1$ if $x$ and $y$
+are different; otherwise, the output is $0$.
 
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercise}
 
     Write the truth table for the following operations:
@@ -509,10 +506,10 @@ if $x$ and $y$ are different; otherwise, the output is $0$.
 
 \subsection{NAND Operation}
 
-The NAND operation is simply the complement of the AND operation.
-The output of the NAND operation is $0$ only if all inputs are $1$.
-In Boolean Algebra, the NAND operation is represented by putting
-an overline or $'$ over the AND operation.
+The NAND operation is simply the complement of the AND operation. The output of
+the NAND operation is $0$ only if all inputs are $1$. In Boolean Algebra, the
+NAND operation is represented by putting an overline or $'$ over the AND
+operation.
 
 \begin{table}[!h]
   \centering
@@ -520,28 +517,28 @@ an overline or $'$ over the AND operation.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $(xy)'$ \\
+    $x$              & $y$              & $(xy)'$         \\
     \hline
-    $0$ & $0$ & $1$ \\
-    $0$ & $1$ & $1$ \\
-    $1$ & $0$ & $1$ \\
-    $1$ & $1$ & $0$ \\
+    $0$              & $0$              & $1$             \\
+    $0$              & $1$              & $1$             \\
+    $1$              & $0$              & $1$             \\
+    $1$              & $1$              & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the NAND Operation with Variables}
   \label{table:Truth-Table-NAND-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-NAND-Operation-Variables} shows the truth
-table for the NAND operation with variables $x$ and $y$. The output is
-$0$ only if both $x$ and $y$ are $1$; otherwise, the output is $1$.
+Table \ref{table:Truth-Table-NAND-Operation-Variables} shows the truth table
+for the NAND operation with variables $x$ and $y$. The output is $0$ only if
+both $x$ and $y$ are $1$; otherwise, the output is $1$.
 
 \subsection{NOR Operation}
 
-The NOR operation is simply the complement of the OR operation. The
-output of the NOR operation is $0$ if at least one input is $1$. In
-Boolean Algebra, the NOR operation is represented by putting an overline
-or $'$ over the OR operation.
+The NOR operation is simply the complement of the OR operation. The output of
+the NOR operation is $0$ if at least one input is $1$. In Boolean Algebra, the
+NOR operation is represented by putting an overline or $'$ over the OR
+operation.
 
 \begin{table}[!h]
   \centering
@@ -549,28 +546,28 @@ or $'$ over the OR operation.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $(x + y)'$ \\
+    $x$              & $y$              & $(x + y)'$      \\
     \hline
-    $0$ & $0$ & $1$ \\
-    $0$ & $1$ & $0$ \\
-    $1$ & $0$ & $0$ \\
-    $1$ & $1$ & $0$ \\
+    $0$              & $0$              & $1$             \\
+    $0$              & $1$              & $0$             \\
+    $1$              & $0$              & $0$             \\
+    $1$              & $1$              & $0$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the NOR Operation with Variables}
   \label{table:Truth-Table-NOR-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-NOR-Operation-Variables} shows the truth
-table for the NOR operation with variables $x$ and $y$. The output is
-$0$ if at least one of $x$ and $y$ is $1$; otherwise, the output is $1$.
+Table \ref{table:Truth-Table-NOR-Operation-Variables} shows the truth table for
+the NOR operation with variables $x$ and $y$. The output is $0$ if at least one
+of $x$ and $y$ is $1$; otherwise, the output is $1$.
 
 \subsection{XNOR Operation}
 
-The XNOR operation is simply the complement of the XOR operation. The
-output of the XNOR operation is $1$ if the inputs are the same. In
-Boolean Algebra, the XNOR operation is represented by putting an overline
-or $'$ over the XOR operation.
+The XNOR operation is simply the complement of the XOR operation. The output of
+the XNOR operation is $1$ if the inputs are the same. In Boolean Algebra, the
+XNOR operation is represented by putting an overline or $'$ over the XOR
+operation.
 
 \begin{table}[!h]
   \centering
@@ -578,27 +575,27 @@ or $'$ over the XOR operation.
     \hline
     \textbf{Input 1} & \textbf{Input 2} & \textbf{Output} \\
     \hline
-    $x$ & $y$ & $(x \oplus y)'$ \\
+    $x$              & $y$              & $(x \oplus y)'$ \\
     \hline
-    $0$ & $0$ & $1$ \\
-    $0$ & $1$ & $0$ \\
-    $1$ & $0$ & $0$ \\
-    $1$ & $1$ & $1$ \\
+    $0$              & $0$              & $1$             \\
+    $0$              & $1$              & $0$             \\
+    $1$              & $0$              & $0$             \\
+    $1$              & $1$              & $1$             \\
     \hline
   \end{tabular}
   \caption{Truth Table for the XNOR Operation with Variables}
   \label{table:Truth-Table-XNOR-Operation-Variables}
 \end{table}
 
-Table \ref{table:Truth-Table-XNOR-Operation-Variables} shows the truth
-table for the XNOR operation with variables $x$ and $y$. The output is
-$1$ if $x$ and $y$ are the same; otherwise, the output is $0$.
+Table \ref{table:Truth-Table-XNOR-Operation-Variables} shows the truth table
+for the XNOR operation with variables $x$ and $y$. The output is $1$ if $x$ and
+$y$ are the same; otherwise, the output is $0$.
 
 \section{Tautology and Fallacy}
 
 In Boolean Algebra, a \textbf{tautology} is a statement that is always
-\textcolor{ForestGreen}{TRUE}, regardless of the values of its variables.
-A \textbf{fallacy} is a statement that is always \textcolor{red}{FALSE},
+\textcolor{ForestGreen}{TRUE}, regardless of the values of its variables. A
+\textbf{fallacy} is a statement that is always \textcolor{red}{FALSE},
 regardless of the values of its variables.
 
 \begin{table}[!h]
@@ -607,50 +604,47 @@ regardless of the values of its variables.
     \hline
     \textbf{$x$} & \textbf{$x'$} & \textbf{$x + x'$} & \textbf{$xx'$} \\
     \hline
-    $0$ & $1$ & $1$ & $0$ \\
-    $1$ & $0$ & $1$ & $0$ \\
+    $0$          & $1$           & $1$               & $0$            \\
+    $1$          & $0$           & $1$               & $0$            \\
     \hline
   \end{tabular}
   \caption{Examples of Tautologies and Fallacies}
   \label{table:Examples-Tautologies-Fallacies}
 \end{table}
 
-Table \ref{table:Examples-Tautologies-Fallacies} shows examples of
-tautologies and fallacies. The expression $x + x'$ is a tautology because
-it is always \textcolor{ForestGreen}{TRUE}, regardless of the value of
-$x$. The expression $xx'$ is a fallacy because it is always
-\textcolor{red}{FALSE}, regardless of the value of $x$.
+Table \ref{table:Examples-Tautologies-Fallacies} shows examples of tautologies
+and fallacies. The expression $x + x'$ is a tautology because it is always
+\textcolor{ForestGreen}{TRUE}, regardless of the value of $x$. The expression
+$xx'$ is a fallacy because it is always \textcolor{red}{FALSE}, regardless of
+the value of $x$.
 
 \section{Boolean Functions}
 
 A \textbf{Boolean function} is a function that takes one or more Boolean
-variables as input and produces a Boolean output. Boolean functions are
-used to represent logical operations in Boolean Algebra. The output of a
-Boolean function is determined by the values of its input variables and
-the logical operations applied to them. It is also known as a 
-\textbf{switching function}. Boolean variables are variables that can
-take on one of two values: $0$ or $1$. In Boolean Algebra, variables
-are typically denoted by letters such as $x$, $y$, $z$, etc. The
-values of these variables represent logical values: $0$ corresponds
-to \textcolor{red}{FALSE}, and $1$ corresponds to
+variables as input and produces a Boolean output. Boolean functions are used to
+represent logical operations in Boolean Algebra. The output of a Boolean
+function is determined by the values of its input variables and the logical
+operations applied to them. It is also known as a \textbf{switching function}.
+Boolean variables are variables that can take on one of two values: $0$ or $1$.
+In Boolean Algebra, variables are typically denoted by letters such as $x$,
+$y$, $z$, etc. The values of these variables represent logical values: $0$
+corresponds to \textcolor{red}{FALSE}, and $1$ corresponds to
 \textcolor{ForestGreen}{TRUE}.
 
-A Boolean function is a function in the form $f: B^n \rightarrow B$,
-where $B = \{0, 1\}$ is the set of Boolean values, and $n$ is the
-number of input variables and is called the \textbf{arity} of the
-function.
+A Boolean function is a function in the form $f: B^n \rightarrow B$, where $B =
+  \{0, 1\}$ is the set of Boolean values, and $n$ is the number of input
+variables and is called the \textbf{arity} of the function.
 
-A \textbf{literal} is a variable or its complement. For example, $x$
-and $x'$ are literals. In the boolean function $f = (x + yz) + x'$,
-there are three variables: $x$, $y$, and $z$. The literals in this
-function are $x$, $y$, $z$, and $x'$ which are the variables and
-their complements.
+A \textbf{literal} is a variable or its complement. For example, $x$ and $x'$
+are literals. In the boolean function $f = (x + yz) + x'$, there are three
+variables: $x$, $y$, and $z$. The literals in this function are $x$, $y$, $z$,
+and $x'$ which are the variables and their complements.
 
 % Exercises
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercises}
 
     Write the truth table for the following Boolean functions:
@@ -669,15 +663,15 @@ their complements.
 
 \section{Laws of Boolean Algebra}
 
-The laws of Boolean Algebra are a set of rules that define the properties
-of logical operations in Boolean Algebra. These laws are used to simplify
-Boolean expressions and to prove the equivalence of different expressions.
-The laws of Boolean Algebra are based on the properties of logical
-operations such as AND, OR, and NOT.
+The laws of Boolean Algebra are a set of rules that define the properties of
+logical operations in Boolean Algebra. These laws are used to simplify Boolean
+expressions and to prove the equivalence of different expressions. The laws of
+Boolean Algebra are based on the properties of logical operations such as AND,
+OR, and NOT.
 
-Boolean algebra's AND operations associates to multiplication in
-arithmetic, while OR operations associates to addition. While the
-NOT operation is simply the complement of the input.
+Boolean algebra's AND operations associates to multiplication in arithmetic,
+while OR operations associates to addition. While the NOT operation is simply
+the complement of the input.
 
 \newpage
 
@@ -688,54 +682,54 @@ NOT operation is simply the complement of the input.
   \centering
   \begin{tabular}{c c c c}
     \hline
-    \textbf{Laws} & \textbf{AND} & \textbf{OR} \\
+    \textbf{Laws}                & \textbf{AND}         & \textbf{OR}                 \\
     \hline
-    Identity & $x(1) = x$ & $x + 0 = x$ \\
-    Domination & $x(0) = 0$ & $x + 1 = 1$ \\
-    Commutative & $xy = yx$ & $x + y = y + x$ \\
-    Associative & $x(yz) = (xy)z$ & $x + (y + z) = (x + y) + z$ \\
-    Distributive & $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$ \\
-    Inverse & $xx' = 0$ & $x + x' = 1$ \\
-    Involution (Double Negation) & $(x')' = x$ &  \\
-    Idempotent & $xx = x$ & $x + x = x$ \\
-    Absorption & $x(x + y) = x$ & $x + xy = x$ \\
-     & $x(x' + y) = xy$ & $x + x'y = x + b$ \\
-    De Morgan's Theorem & $(xy)' = x' + y'$ & $(x + y)' = x'y'$ \\
+    Identity                     & $x(1) = x$           & $x + 0 = x$                 \\
+    Domination                   & $x(0) = 0$           & $x + 1 = 1$                 \\
+    Commutative                  & $xy = yx$            & $x + y = y + x$             \\
+    Associative                  & $x(yz) = (xy)z$      & $x + (y + z) = (x + y) + z$ \\
+    Distributive                 & $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$   \\
+    Inverse                      & $xx' = 0$            & $x + x' = 1$                \\
+    Involution (Double Negation) & $(x')' = x$          &                             \\
+    Idempotent                   & $xx = x$             & $x + x = x$                 \\
+    Absorption                   & $x(x + y) = x$       & $x + xy = x$                \\
+                                 & $x(x' + y) = xy$     & $x + x'y = x + y$           \\
+    De Morgan's Theorem          & $(xy)' = x' + y'$    & $(x + y)' = x'y'$           \\
     \hline
   \end{tabular}
   \caption{Laws of Boolean Algebra}
   \label{table:Laws-Boolean-Algebra}
 \end{table}
 
-Table \ref{table:Laws-Boolean-Algebra} shows the laws of Boolean Algebra.
-These laws are used to simplify Boolean expressions and to prove the
-equivalence of different expressions. The laws are based on the properties
-of logical operations such as AND, OR, and NOT.
+Table \ref{table:Laws-Boolean-Algebra} shows the laws of Boolean Algebra. These
+laws are used to simplify Boolean expressions and to prove the equivalence of
+different expressions. The laws are based on the properties of logical
+operations such as AND, OR, and NOT.
 
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercises}
 
     \begin{enumerate}
       \item Verify the following laws of Boolean Algebra:
-      \begin{enumerate}
-        \item Identity Law: $x + 0 = x$
-        \item Commutative Law: $xy = yx$
-        \item Associative Law: $x(yz) = (xy)z$
-        \item Distributive Law: $x(y + z) = xy + xz$
-        \item Inverse Law: $xx' = 0$
-        \item Involution Law: $(x')' = x$
-        \item De Morgan's Theorem: $(xy)' = x' + y'$
-      \end{enumerate}
- 
+            \begin{enumerate}
+              \item Identity Law: $x + 0 = x$
+              \item Commutative Law: $xy = yx$
+              \item Associative Law: $x(yz) = (xy)z$
+              \item Distributive Law: $x(y + z) = xy + xz$
+              \item Inverse Law: $xx' = 0$
+              \item Involution Law: $(x')' = x$
+              \item De Morgan's Theorem: $(xy)' = x' + y'$
+            \end{enumerate}
+
       \item Prove the following laws of Boolean Algebra:
-      \begin{enumerate}
-        \item Domination Law: $x + 1 = 1$
-        \item Idempotent Law: $x + x = x$
-        \item Absorption Law: $x(x + y) = x$
-      \end{enumerate}
+            \begin{enumerate}
+              \item Domination Law: $x + 1 = 1$
+              \item Idempotent Law: $x + x = x$
+              \item Absorption Law: $x(x + y) = x$
+            \end{enumerate}
     \end{enumerate}
 
     \hspace{0.5em}
@@ -745,57 +739,57 @@ of logical operations such as AND, OR, and NOT.
 \section{Simplifying Boolean Expressions}
 
 Boolean expressions can be simplified using the laws of Boolean Algebra.
-Simplifying a Boolean expression involves applying the laws of Boolean
-Algebra to reduce the expression to its simplest form. This process
-involves combining terms, eliminating redundant terms, and applying the
-laws of Boolean Algebra to simplify the expression.
+Simplifying a Boolean expression involves applying the laws of Boolean Algebra
+to reduce the expression to its simplest form. This process involves combining
+terms, eliminating redundant terms, and applying the laws of Boolean Algebra to
+simplify the expression.
 
-Consider the Boolean expression $f(x, y) = x + x'y$. We can simplify
-this expression using the laws of Boolean Algebra as follows:
+Consider the Boolean expression $f(x, y) = x + x'y$. We can simplify this
+expression using the laws of Boolean Algebra as follows:
 
 \begin{align*}
-  f(x, y) & = x + x'y \\
-  & = (x + x')(x + y) && \text{Distributive Law} \\
-  & = (1)(x + y) && \text{Inverse Law} \\
-  & = x + y && \text{Identity Law}
+  f(x, y) & = x + x'y                                      \\
+          & = (x + x')(x + y) &  & \text{Distributive Law} \\
+          & = (1)(x + y)      &  & \text{Inverse Law}      \\
+          & = x + y           &  & \text{Identity Law}
   f(x, y) & = x + x'y = x + y
 \end{align*}
 
-The expression $f(x, y) = x + x'y$ can be simplified to $f(x, y) = x + y$
-using the laws of Boolean Algebra.
+The expression $f(x, y) = x + x'y$ can be simplified to $f(x, y) = x + y$ using
+the laws of Boolean Algebra.
 
 Consider the Boolean expression $f(x, y, z) = (x + yz') + (xy)'$. We can
 simplify this expression using the laws of Boolean Algebra as follows:
 
 \begin{align*}
-  f(x, y, z) & = (x + yz') + (xy)' \\
-  & = (x + yz') + x' + y' && \text{De Morgan's Theorem} \\
-  & = (x + x') + yz' + y' && \text{Commutative Law} \\
-  & = 1 + yz' + y' && \text{Inverse Law} \\
-  & = 1 && \text{Domination Law}
+  f(x, y, z) & = (x + yz') + (xy)'                                   \\
+             & = (x + yz') + x' + y' &  & \text{De Morgan's Theorem} \\
+             & = (x + x') + yz' + y' &  & \text{Commutative Law}     \\
+             & = 1 + yz' + y'        &  & \text{Inverse Law}         \\
+             & = 1                   &  & \text{Domination Law}
 \end{align*}
 
-The expression $f(x, y, z) = (x + yz') + (xy)'$ can be simplified to
-$f(x, y, z) = 1$ using the laws of Boolean Algebra.
+The expression $f(x, y, z) = (x + yz') + (xy)'$ can be simplified to $f(x, y,
+  z) = 1$ using the laws of Boolean Algebra.
 
-Consider the Boolean expression $f(x, y) = (x + x'y) + (x + y')$. We
-can simplify this expression using the laws of Boolean Algebra as follows:
+Consider the Boolean expression $f(x, y) = (x + x'y) + (x + y')$. We can
+simplify this expression using the laws of Boolean Algebra as follows:
 
 \begin{align*}
-  f(x, y) & = (x + x'y) + (x + y') \\
-  & = [(x + x')(x + y)] + (x + y') && \text{Distributive Law} \\
-  & = [1(x + y)] + (x + y') && \text{Inverse Law} \\
-  & = (x + y) + (x + y') && \text{Identity Law} \\
-  & = (y + x) + (x + y') && \text{Commutative Law} \\
-  & = y + (x + x) + y' && \text{Associative Law} \\
-  & = y + x + y' && \text{Idempotent Law} \\
-  & = x + y + y' && \text{Commutative Law} \\
-  & = x + 1 && \text{Inverse Law} \\
-  & = 1 && \text{Domination Law}
+  f(x, y) & = (x + x'y) + (x + y')                                      \\
+          & = [(x + x')(x + y)] + (x + y') &  & \text{Distributive Law} \\
+          & = [1(x + y)] + (x + y')        &  & \text{Inverse Law}      \\
+          & = (x + y) + (x + y')           &  & \text{Identity Law}     \\
+          & = (y + x) + (x + y')           &  & \text{Commutative Law}  \\
+          & = y + (x + x) + y'             &  & \text{Associative Law}  \\
+          & = y + x + y'                   &  & \text{Idempotent Law}   \\
+          & = x + y + y'                   &  & \text{Commutative Law}  \\
+          & = x + 1                        &  & \text{Inverse Law}      \\
+          & = 1                            &  & \text{Domination Law}
 \end{align*}
 
-The expression $f(x, y) = (x + x'y) + (x + y')$ can be simplified
-to $f(x, y) = 1$ using the laws of Boolean Algebra.
+The expression $f(x, y) = (x + x'y) + (x + y')$ can be simplified to $f(x, y) =
+  1$ using the laws of Boolean Algebra.
 
 % \begin{align*}
 %   f(x, y, z) = [y + x'y + (x + y')]y'
@@ -811,11 +805,10 @@ to $f(x, y) = 1$ using the laws of Boolean Algebra.
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercises}
 
-    Simplify the following Boolean expressions using the laws of Boolean
-    Algebra:
+    Simplify the following Boolean expressions using the laws of Boolean Algebra:
 
     \begin{enumerate}
       \item $f(x, y) = (x + y')(x + y)$
@@ -855,11 +848,10 @@ to $f(x, y) = 1$ using the laws of Boolean Algebra.
 \section{Principle of Duality}
 
 The \textbf{principle of duality} states that any theorem or identity in
-Boolean Algebra remains valid if we interchange the AND and OR operations
-and the constants $0$ and $1$. In other words, if we replace each AND
-operation with an OR operation, each OR operation with an AND operation,
-each $0$ with a $1$, and each $1$ with a $0$, the resulting expression
-is also valid.
+Boolean Algebra remains valid if we interchange the AND and OR operations and
+the constants $0$ and $1$. In other words, if we replace each AND operation
+with an OR operation, each OR operation with an AND operation, each $0$ with a
+$1$, and each $1$ with a $0$, the resulting expression is also valid.
 
 % Table of Principle of Duality Examples
 \begin{table}[!h]
@@ -868,28 +860,28 @@ is also valid.
     \hline
     \textbf{Expression} & \textbf{Dual Expression} \\
     \hline
-    $x + y$ & $xy$ \\
-    $x(y + z)$ & $x + yz$ \\
-    $x(y + 0)$ & $x + y \cdot 1$ \\
-    $x + 1 = 1$ & $x \cdot 0 = 0$ \\
-    $x + x = x$ & $x \cdot x = x$ \\
+    $x + y$             & $xy$                     \\
+    $x(y + z)$          & $x + yz$                 \\
+    $x(y + 0)$          & $x + y \cdot 1$          \\
+    $x + 1 = 1$         & $x \cdot 0 = 0$          \\
+    $x + x = x$         & $x \cdot x = x$          \\
     \hline
   \end{tabular}
   \caption{Examples of the Principle of Duality}
   \label{table:Examples-Principle-Duality}
 \end{table}
 
-Table \ref{table:Examples-Principle-Duality} shows examples of the
-principle of duality. The dual expression of $x + y$ is $xy$, the dual
-expression of $x(y + z)$ is $x + yz$, and so on. The principle of duality
-states that any theorem or identity in Boolean Algebra remains valid if
-we interchange the AND and OR operations and the constants $0$ and $1$.
+Table \ref{table:Examples-Principle-Duality} shows examples of the principle of
+duality. The dual expression of $x + y$ is $xy$, the dual expression of $x(y +
+  z)$ is $x + yz$, and so on. The principle of duality states that any theorem or
+identity in Boolean Algebra remains valid if we interchange the AND and OR
+operations and the constants $0$ and $1$.
 
 % Exercises
 \noindent\fbox{%
   \parbox{\textwidth}{
     \hspace{0.5em}
-    
+
     \textbf{Exercises}
 
     Write the dual expression for the following Boolean expressions:
@@ -993,13 +985,13 @@ we interchange the AND and OR operations and the constants $0$ and $1$.
 
 \begin{enumerate}[label={\Alph*.}]
   \item \textbf{Books}
-    \begin{itemize}
-      \item 
-    \end{itemize}
+        \begin{itemize}
+          \item
+        \end{itemize}
   \item \textbf{Other Sources}
-    \begin{itemize}
-      \item 
-    \end{itemize}
+        \begin{itemize}
+          \item
+        \end{itemize}
 \end{enumerate}
 
 \end{document}
