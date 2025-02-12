@@ -680,21 +680,24 @@ the complement of the input.
 % |    | AND | OR |
 \begin{table}[!h]
   \centering
-  \begin{tabular}{c c c c}
+  \begin{tabular}{c c c}
     \hline
-    \textbf{Laws}                & \textbf{AND}         & \textbf{OR}                 \\
+    \textbf{Laws}                & \textbf{AND}               & \textbf{OR}                 \\
     \hline
-    Identity                     & $x(1) = x$           & $x + 0 = x$                 \\
-    Domination                   & $x(0) = 0$           & $x + 1 = 1$                 \\
-    Commutative                  & $xy = yx$            & $x + y = y + x$             \\
-    Associative                  & $x(yz) = (xy)z$      & $x + (y + z) = (x + y) + z$ \\
-    Distributive                 & $x(y + z) = xy + xz$ & $x + yz = (x + y)(x + z)$   \\
-    Inverse                      & $xx' = 0$            & $x + x' = 1$                \\
-    Involution (Double Negation) & $(x')' = x$          &                             \\
-    Idempotent                   & $xx = x$             & $x + x = x$                 \\
-    Absorption                   & $x(x + y) = x$       & $x + xy = x$                \\
-                                 & $x(x' + y) = xy$     & $x + x'y = x + y$           \\
-    De Morgan's Theorem          & $(xy)' = x' + y'$    & $(x + y)' = x'y'$           \\
+    Identity                     & $x(1) = x$                 & $x + 0 = x$                 \\
+    Domination                   & $x(0) = 0$                 & $x + 1 = 1$                 \\
+    Commutative                  & $xy = yx$                  & $x + y = y + x$             \\
+    Associative                  & $x(yz) = (xy)z$            & $x + (y + z) = (x + y) + z$ \\
+    Distributive                 & $x(y + z) = xy + xz$       & $x + yz = (x + y)(x + z)$   \\
+    Inverse                      & $xx' = 0$                  & $x + x' = 1$                \\
+    Idempotent                   & $xx = x$                   & $x + x = x$                 \\
+    Absorption                   & $x(x + y) = x$             & $x + xy = x$                \\
+                                 & $x(x' + y) = xy$           & $x + x'y = x + y$           \\
+    De Morgan's Theorem          & $(xy)' = x' + y'$          & $(x + y)' = x'y'$           \\
+
+    \hline
+    Involution (Double Negation) & $(x')' = x$                &                             \\
+    Consensus                    & $xy + x'z + yz = xy + x'z$                               \\
     \hline
   \end{tabular}
   \caption{Laws of Boolean Algebra}
