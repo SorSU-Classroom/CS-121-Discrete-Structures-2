@@ -4,3 +4,5 @@
 samples/
 **/com/**/Exercises/
 **/**Exam/
+Module/
+!/Module/**/*.pdf
